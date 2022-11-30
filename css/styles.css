@@ -1,0 +1,65 @@
+*{
+	box-sizing: border-box;
+}
+
+html{	
+	font-size: 16px;
+}
+
+body{
+	color: #000;
+	background-color: #e6fff5;
+	font-family: 'Nunito', sans-serif;
+}
+/* !!!!!!NAVBAR!!!!!! */
+#navbar-default, header{
+	background-color: #4dffb8 !important; 
+}
+
+.navbar-brand{
+	font-weight: 900;
+	font-size: 2em;
+}
+
+.navbar-nav{
+	margin-bottom: 0 !important;
+}
+
+a, a:hover{
+	color: #000;
+	text-decoration: none;
+}
+
+.navbar-nav li{
+	text-align: center;
+	font-size: 1.3em;
+}
+
+.navbar-toggler{
+	border-width: 2px;
+	border-color: #000;
+}
+
+/* !!!!!!NAVBAR END!!!!!! */
+
+/* !!!!!!MAIN CONTENT!!!!!! */
+
+h1{
+	font-size: 2em;
+	font-weight: 900;
+}
+
+.menu-tile{
+	min-height: 700px;
+	background-color: #ccffeb;
+	border-radius: 8px;
+	padding: 5%;
+}
+
+.to-top{
+	margin-top: 20px;
+	text-align: center !important;
+	font-weight: 900;
+}
+
+/* !!!!!!MAIN CONTENT END!!!!!! */

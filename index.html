@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- !!!!!!!!!!!! I'M USING BOOTSTRAP 5.2 HERE. NOT BOOTSTRAP 3.4 WHICH IS USED IN COURSE !!!!!!!!!!!!! -->
+    <!-- !!! THERE'S NO SUCH THING AS pull-left OR pull-right IN B.-5.2 SO I USE "POSITION-RELATIVE END-0" INSTEAD OF PULL-RIGHT !!! -->
+    <!-- !!! I'M SORRY IF IT'S HARD TO UNDERSTAND B.-5 'CAUSE IN THE COURSE THERE'S ANOTHER VERSION BEING USED BUT IT'S BETTER TO USE THE LATEST BOOTSTRAP VERSION AS I THINK SO I USE 5.2. i'll try to explain in the comment's what and how do I use :) !!! -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Module 3 </title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <header>
+    <div class="container">
+      <!-- navbar-light bg-light -- it is for the color-scheme
+      position-relative -- so the positioning of the elements inside the navbar will be possible -->
+      <nav id="navbar-default" class="navbar navbar-light bg-light position-relative"> 
+          <a class="navbar-brand" href="index.html">Food LLC</a>
+          <!-- end -- that means same as "float: right;" 
+            "d-md-none" basicly same as "hidden-md" in bootstrap 3-->
+        <button class="d-md-none navbar-toggler position-relative end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- me-auto -- that makes margin-right auto
+          mb-2 -- margin-bottom: 2rem -->
+          <ul class="navbar-nav  me-auto mb-2"  >
+            <li>
+              <a href="#chicken">Chicken</a>
+            </li>
+            <li>
+              <a href="#beef">Beef</a>
+            </li>
+            <li>
+              <a href="#sushi">Sushi</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <div id="main-content" class="container position-relative">
+    <h1 id="heading" class="text-center mt-4 mb-4">Our Menu</h1>
+    <div class="row">
+      <div id="chicken" class="col-12 col-md-6 col-lg-4 mb-2 ">
+        <div class="menu-tile mb-2 mx-1 ">
+          <div>
+            <h2 class="text-center">Chicken</h2>
+            OPTIONAL, UNGRADED PORTION IS BELOW:
+
+The rest of this assignment is not graded and is optional, but it's good practice, so go for it if you have time. The solution to the optional ungraded portion of the assignment below does NOT have to be submitted.
+
+(OPTIONAL, NOT GRADED) Since in this optional part you will be implementing something more complex than a single section in the Bootstrap grid, remove that section before continuing.
+
+(OPTIONAL, NOT GRADED) As in previous assignment, the rest of your site is very simple. It consists of a page heading and 3 sections (all in one row in the desktop view). Each section contains some text. You can make it dummy text/"lorem ipsum", it doesn't matter. How the sections are laid out on the screen depends on the width of the browser window. (Hint: use the Bootstrap Grid we discussed in Lecture 26 of Module 2 as well as numerous lectures of Module 3, including Lecture 35.)
+
+(OPTIONAL, NOT GRADED) Each section should be fairly large in height. You can achieve this by either filling it up with a lot of content text or simply setting its height property to something large like 700px. At the end of each section, provide a link that says "Back to Top". This link should jump the page back to "Our Menu" heading. (Hint: use a link that points to a section of the page discussed in Lecture 9 of Module 1.)
+
+(OPTIONAL, NOT GRADED) Each section should have an h3-based section heading which should be centered within the section. Use the same Bootstrap class you used for centering the page heading to center the section heading. Use the heading names shown in the mockup illustrations, i.e., "Chicken", "Beef", "Sushi".
+
+(OPTIONAL, NOT GRADED)Layout: In the desktop view, each of the 3 sections should take up equal amount of space on the screen. As you make the browser window wider or narrower, each section should become wider or narrower.
+
+(Hint: use md-based grid column classes as discussed in Lecture 26 and Lecture 35 among others. It's a 12 grid-based system, so 3 in a row means each grid will take up 4 grid cells, i.e., col-md-4.) For a visual reference of this view, see the desktop mockup illustration below.
+            <div class="to-top"><a href="#heading">Back to top.</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="beef" class="col-12 col-md-6 col-lg-4 mb-2 ">
+        <div class="menu-tile mb-2 mx-1 ">
+          <h2 class="text-center">Beef</h2>
+OPTIONAL, UNGRADED PORTION IS BELOW:
+
+The rest of this assignment is not graded and is optional, but it's good practice, so go for it if you have time. The solution to the optional ungraded portion of the assignment below does NOT have to be submitted.
+
+(OPTIONAL, NOT GRADED) Since in this optional part you will be implementing something more complex than a single section in the Bootstrap grid, remove that section before continuing.
+
+(OPTIONAL, NOT GRADED) As in previous assignment, the rest of your site is very simple. It consists of a page heading and 3 sections (all in one row in the desktop view). Each section contains some text. You can make it dummy text/"lorem ipsum", it doesn't matter. How the sections are laid out on the screen depends on the width of the browser window. (Hint: use the Bootstrap Grid we discussed in Lecture 26 of Module 2 as well as numerous lectures of Module 3, including Lecture 35.)
+
+(OPTIONAL, NOT GRADED) Each section should be fairly large in height. You can achieve this by either filling it up with a lot of content text or simply setting its height property to something large like 700px. At the end of each section, provide a link that says "Back to Top". This link should jump the page back to "Our Menu" heading. (Hint: use a link that points to a section of the page discussed in Lecture 9 of Module 1.)
+
+(OPTIONAL, NOT GRADED) Each section should have an h3-based section heading which should be centered within the section. Use the same Bootstrap class you used for centering the page heading to center the section heading. Use the heading names shown in the mockup illustrations, i.e., "Chicken", "Beef", "Sushi".
+
+(OPTIONAL, NOT GRADED)Layout: In the desktop view, each of the 3 sections should take up equal amount of space on the screen. As you make the browser window wider or narrower, each section should become wider or narrower.
+
+(Hint: use md-based grid column classes as discussed in Lecture 26 and Lecture 35 among others. It's a 12 grid-based system, so 3 in a row means each grid will take up 4 grid cells, i.e., col-md-4.) For a visual reference of this view, see the desktop mockup illustration below.
+          <div class="to-top"><a href="#heading">Back to top.</a></div>
+        </div>
+      </div>
+
+      <div id="sushi" class=" col-12 col-md-12 col-lg-4 mb-2 ">
+        <div class="menu-tile mx-1">
+          <h2 class="text-center">Sushi</h2>OPTIONAL, UNGRADED PORTION IS BELOW:
+
+The rest of this assignment is not graded and is optional, but it's good practice, so go for it if you have time. The solution to the optional ungraded portion of the assignment below does NOT have to be submitted.
+
+(OPTIONAL, NOT GRADED) Since in this optional part you will be implementing something more complex than a single section in the Bootstrap grid, remove that section before continuing.
+
+(OPTIONAL, NOT GRADED) As in previous assignment, the rest of your site is very simple. It consists of a page heading and 3 sections (all in one row in the desktop view). Each section contains some text. You can make it dummy text/"lorem ipsum", it doesn't matter. How the sections are laid out on the screen depends on the width of the browser window. (Hint: use the Bootstrap Grid we discussed in Lecture 26 of Module 2 as well as numerous lectures of Module 3, including Lecture 35.)
+
+(OPTIONAL, NOT GRADED) Each section should be fairly large in height. You can achieve this by either filling it up with a lot of content text or simply setting its height property to something large like 700px. At the end of each section, provide a link that says "Back to Top". This link should jump the page back to "Our Menu" heading. (Hint: use a link that points to a section of the page discussed in Lecture 9 of Module 1.)
+
+(OPTIONAL, NOT GRADED) Each section should have an h3-based section heading which should be centered within the section. Use the same Bootstrap class you used for centering the page heading to center the section heading. Use the heading names shown in the mockup illustrations, i.e., "Chicken", "Beef", "Sushi".
+
+(OPTIONAL, NOT GRADED)Layout: In the desktop view, each of the 3 sections should take up equal amount of space on the screen. As you make the browser window wider or narrower, each section should become wider or narrower.
+
+(Hint: use md-based grid column classes as discussed in Lecture 26 and Lecture 35 among others. It's a 12 grid-based system, so 3 in a row means each grid will take up 4 grid cells, i.e., col-md-4.) For a visual reference of this view, see the desktop mockup illustration below.
+          <div class="to-top"><a href="#heading">Back to top.</a></div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End of main-content -->
+
+  <footer class="panel-footer">
+
+  </footer>
+
+    
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
